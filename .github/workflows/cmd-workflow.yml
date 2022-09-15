@@ -1,0 +1,20 @@
+name: Commands Workflow
+
+on: push
+
+jobs:
+  testing-ubunto-cmd:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo something
+        run: echo "< $_ >"
+      - name: check directory
+        run: |
+          pwd
+          >
+          ls
+          &&
+          ls -la
+      - name: echo on sh instead of bash
+        run: echo "< $_ >"
+
