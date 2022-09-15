@@ -6,8 +6,8 @@ jobs:
   testing-ubunto-cmd:
     runs-on: ubuntu-latest
     steps:
-      - name: echo something
-        run: echo "< $_ >"
+      - name: check all environment variables
+        run: env
       - name: check directory
         run: |
           pwd
@@ -19,8 +19,8 @@ jobs:
           pwd
           &&
           ls
-      - name: echo on sh instead of bash
-        run: echo "< $_ >"
+      - name: check all environment variables in sh instead of bash
+        run: env
         shell: sh
 
 
