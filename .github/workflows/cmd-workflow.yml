@@ -21,4 +21,6 @@ jobs:
           ls
       - name: echo on sh instead of bash
         run: echo "< $_ >"
+        shell: sh
+
 
