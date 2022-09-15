@@ -13,3 +13,5 @@ jobs:
           who-to-greet: Bnaji
       - name: check greeting time
         run: echo ${{ steps.gree-me.outputs.time }}
+      - name: echo something
+        run: echo Done
