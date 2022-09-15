@@ -22,5 +22,14 @@ jobs:
       - name: check all environment variables in sh instead of bash
         run: env
         shell: sh
+  testing-windows-cmd:
+    runs-on: windows-latest
+    needs: testing-ubunto-cmd
+    steps:
+      - name: check with powershell
+        run: dir
+      - name: check with bash in windows
+        shell: bash
+        run: ls
 
 
