@@ -24,7 +24,7 @@ jobs:
         shell: sh
   testing-windows-cmd:
     runs-on: windows-latest
-    needs: testing-ubunto-cmd
+    # needs: testing-ubunto-cmd
     steps:
       - name: check with powershell
         run: dir

@@ -1,0 +1,15 @@
+name: test Actions
+
+on: push
+
+jobs:
+  test-action:
+    - name: check the javascript famous action
+      steps:
+        - name: Simple js action that takes input
+          id: greet-me
+          uses: actions/hello-world-javascript-action@v1
+          with:
+            who-to-greet: Bnaji
+        - name: check greeting time
+          run: echo ${{ steps.gree-me.outputs.time }}
