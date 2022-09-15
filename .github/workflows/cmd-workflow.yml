@@ -11,9 +11,14 @@ jobs:
       - name: check directory
         run: |
           pwd
-          > ls
+          ls
+      - name: check directory in a different way
+        run: >
+          echo ------------------------------\n
           &&
-          ls -la
+          pwd
+          &&
+          ls
       - name: echo on sh instead of bash
         run: echo "< $_ >"
 
