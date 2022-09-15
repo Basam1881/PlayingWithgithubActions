@@ -11,8 +11,7 @@ jobs:
       - name: check directory
         run: |
           pwd
-          >
-          ls
+          > ls
           &&
           ls -la
       - name: echo on sh instead of bash
